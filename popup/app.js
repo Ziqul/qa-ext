@@ -1,25 +1,24 @@
-require('jquery');
 require('material-icons');
-require('materialize-css');
-require('rivets');
+require('materialize-css/dist/css/materialize.min.css');
+require('./global.css');
+
+require('jquery');
+require('materialize-css/dist/js/materialize.min.js');
 const Rlite = require('rlite-router');
 
 const route = Rlite(notFound, {
-    // Default route
     "": function() {
-        return 'Home';
+        return require('./components/credcheck/layout.html');
     },
 
-    // #inbox
-    "inbox": function() {
-        return 'Inbox';
+    "report": function() {
+        return require('./components/report/layout.html');
     },
 
     // #sent?to=john -> r.params.to will equal 'john'
     "sent": function({
         to
     }) {
-        return 'Sent to ' + to;
     },
 
     // #users/chris -> r.params.name will equal 'chris'
@@ -48,9 +47,7 @@ function notFound() {
 
 // Hash-based routing
 function processHash() {
-    const hash = location.hash || '#sent?to=john';
-
-    // Do something useful with the result of the route
+    const hash = location.hash || '#';
     $('#view').html(route(hash.slice(1)));
 }
 

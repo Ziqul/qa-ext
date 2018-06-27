@@ -1,0 +1,12 @@
+html {
+    height: fit-content;
+    min-width: 340px;
+    min-height: 410px;
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    padding-left: 2px;
+    padding-right: 2px;
+}
