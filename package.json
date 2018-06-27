@@ -1,0 +1,37 @@
+{
+  "name": "qa-ext",
+  "version": "1.0.0",
+  "description": "Chrome extension called to make life of QA engineer easier. Made for Synebo by Synebo.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ziqul/qa-ext.git"
+  },
+  "author": "Maxim Sorokin (maxim.sorokin@synebo.io)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Ziqul/qa-ext/issues"
+  },
+  "homepage": "https://github.com/Ziqul/qa-ext#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "material-icons": "^0.2.3",
+    "materialize-css": "^0.100.2",
+    "rivets": "^0.9.6",
+    "rlite-router": "^2.0.3"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8"
+  }
+}

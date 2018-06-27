@@ -8,7 +8,7 @@
         "activeTab"
     ],
 
-    "description": "Will write later.",
+    "description": "Chrome extension called to make life of QA engineer easier. Made for Synebo by Synebo.",
     "icons": {
         "19": "icon_019.png",
         "38": "icon_038.png",
@@ -16,7 +16,7 @@
     },
 
     "browser_action": {
-        "default_popup": "popup/html/index.html"
+        "default_popup": "popup/dist/index.html"
     },
 
     "background": {
